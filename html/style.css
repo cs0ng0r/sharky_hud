@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 98.5vh;
+  font-variant-numeric: tabular-nums;
+}
+
+#hud {
+  position: absolute;
+  top: 30px; /* A HUD enyhe lejjebb helyezése a jobb láthatóság érdekében */
+  right: 30px; /* A HUD enyhe beljebb helyezése */
+  font-family: "Barlow Condensed", sans-serif; /* Modern betűtípusra váltás */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Enyhe árnyék a szöveg olvashatóságához */
+}
+
+#user-info {
+  background-color: rgba(
+    32,
+    39,
+    39,
+    0.9
+  ); /* Kissé sötétebb háttér a modern hatásért */
+  padding: 10px 15px; /* Nagyobb párnázás a tágasabb megjelenéshez */
+  border-radius: 10px; /* Kerekebb sarkok */
+  display: inline-block;
+  width: 300px; /* Szélesebb a jobb olvashatóság érdekében */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Modern árnyékhatás hozzáadása */
+  margin-bottom: 10px;
+}
+
+#username {
+  font-size: 1.25rem; /* Betűméret növelése */
+  margin-bottom: 6px; /* Hely hozzáadása a felhasználónév alá */
+  display: flex;
+  justify-content: space-between;
+}
+
+#status-bars {
+  margin-bottom: 10px; /* Több hely hozzáadása az állapotsávok alatt */
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  height: 1.25rem; /* Magasabb állapotsávok */
+  margin-bottom: 5px; /* Több hely a sávok között */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Világosabb háttér a jobb kontraszt érdekében */
+  position: relative;
+  border-radius: 6px; /* Kerekebb sarkok */
+  overflow: hidden;
+  padding: 5px;
+}
+
+.status-bar i {
+  position: relative;
+  z-index: 2; /* Az ikon a sáv fölött legyen */
+  margin-left: 5px; /* Távolság az ikontól a bal szélig */
+  color: white;
+  font-size: 1rem;
+}
+
+.bar-fill {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* A sáv teljes kitöltése */
+  border-radius: 6px; /* Egységesen tartott sarkok */
+  z-index: 1; /* Az ikon alatt legyen a sáv kitöltése */
+}
+
+.health .bar-fill {
+  background-color: #42b289; /* Zöld */
+}
+
+.armor .bar-fill {
+  background-color: #4db8ff; /* Kék */
+}
+
+.hunger .bar-fill {
+  background-color: #ffb84d; /* Sárga */
+}
+
+.thirst .bar-fill {
+  background-color: #4d9aff; /* Cián */
+}
+
+#money {
+  font-size: 1.5rem; /* Betűméret növelése a pénzhez */
+  font-weight: bold;
+  color: #42b289;
+  text-align: right;
+  letter-spacing: 1px; /* Enyhe térköz a modern megjelenéshez */
+}
+
+#clock {
+  font-size: 1.25rem; /* Betűméret módosítása szükség szerint */
+  text-align: right;
+  margin-bottom: 10px; /* Hely a óra alatt */
+  color: white; /* A szöveg színe jól látható legyen */
+  display: block; /* Biztosítja, hogy az elem ne legyen rejtve */
+  z-index: 1; /* Az óra az egyéb elemek fölött legyen */
+}
+

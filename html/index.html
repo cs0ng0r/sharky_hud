@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTA HUD</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/69e7b384b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="hud">
+      <div id="user-info">
+        <div id="username">
+          <span id="username-text">John Strafe | LSPD | ID: 3</span>
+          <span id="clock">00:00</span>
+        </div>
+        <div id="money">$000059900</div>
+      </div>
+
+      <div id="status-bars">
+        <div class="status-bar health">
+          <i class="fas fa-heart"></i>
+          <div class="bar-fill"></div>
+        </div>
+        <div class="status-bar armor">
+          <i class="fas fa-shield-alt"></i>
+          <div class="bar-fill"></div>
+        </div>
+        <div class="status-bar hunger">
+          <i class="fas fa-hamburger"></i>
+          <div class="bar-fill"></div>
+        </div>
+        <div class="status-bar thirst">
+          <i class="fas fa-glass-whiskey"></i>
+          <div class="bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
