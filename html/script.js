@@ -36,8 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleSpeedometer(event.data.isInVehicle);
       if (event.data.isInVehicle) {
         updateSpeedometer(event.data.speed);
-      } else {
-        updateSeatbeltIcon(false); // Ensure seatbelt icon is hidden when not in vehicle
       }
     }
   });
