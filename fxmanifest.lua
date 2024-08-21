@@ -7,8 +7,12 @@ client_scripts {
     'client.lua',
 }
 
-shared_scripts {
-    '@es_extended/imports.lua'
+shared_scripts{
+    '@es_extended/imports.lua',
+}
+
+server_scripts {
+    'server.lua',
 }
 
 ui_page 'html/index.html'
