@@ -1,4 +1,4 @@
-# SeeMTA Inspirálta HUD
+# MTA Inspirálta HUD
 
 Tartalma:
 - Név, Job, Id és Idő megjelenítés
